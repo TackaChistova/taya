@@ -19,3 +19,19 @@ while(number != 0){
 
 return mini;
 }
+
+//7
+int itc_rev_num(long long number){
+long long a;
+long long k = 0;
+if(number < 0){
+    number = number * -1;
+}
+while(number > 0){
+    a = number % 10;
+    k = k * 10 + a;
+    number = number / 10;
+}
+return itc_len_num(k);
+
+}

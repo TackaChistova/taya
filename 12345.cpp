@@ -69,4 +69,3 @@ while(number != 0){
 
 return maxi;
 }
-
