@@ -35,3 +35,25 @@ while(number > 0){
 return itc_len_num(k);
 
 }
+
+
+//8
+int itc_null_count(long long number){
+long long a;
+long long k = 0;
+if(number < 0){
+    number = number * -1;
+}
+while(number > 0){
+    a = number % 10;
+    if(a == 0){
+        k++;
+    }
+    number = number /10;
+
+}
+return k;
+}
+
+//9
+

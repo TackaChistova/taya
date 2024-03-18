@@ -8,6 +8,6 @@ long long itc_multi_num(long long number);
 int itc_max_num(long long number);
 int itc_min_num(long long);
 int itc_rev_num(long long number);
-
+int itc_null_count(long long number);
 
 #endif // MIDDLE_H_INCLUDED
