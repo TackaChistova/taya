@@ -56,4 +56,39 @@ return k;
 }
 
 //9
+bool itc_mirror_num(long long number){
+int x = 0;
+long long ch = 0;
+long long n = number;
+while(number != 0){
+    x = number % 10;
+    ch = ch * 10 + x;
+    number = number / 10;
+}
+if(ch == n){
+    return 1;
+}
+else{
+    return 0;
+}
+}
 
+
+
+//10
+int itc_mirror_count(long long number){
+long long a = 1;
+if(number > 0){
+    if(itc_mirror_num(a) == 1){
+    cout << a << " ";
+    a++;
+}
+}
+if(number <= 0){
+    if(itc_mirror_num(a) == 1){
+    cout << a << " ";
+    a++;
+}
+
+}
+}
