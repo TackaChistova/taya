@@ -12,6 +12,12 @@ cout << number;
 //2
 int itc_len_num(long long number){
 long long a = 0;
+if(number < 0){
+    number = number * -1;
+}
+if(number == 0){
+    return 1;
+}
 while(number != 0){
     a++;
     number = number / 10;
