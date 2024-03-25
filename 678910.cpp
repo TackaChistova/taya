@@ -83,7 +83,7 @@ else{
 
 //10
 int itc_mirror_count(long long number){
-long long a = 0;
+long long a = 1;
 long long n = 0;
 if(number == 0){
     return 2;
