@@ -44,6 +44,9 @@ return itc_len_num(k);
 int itc_null_count(long long number){
 long long a;
 long long k = 0;
+if(number == 0){
+    return 1;
+}
 if(number < 0){
     number = number * -1;
 }
