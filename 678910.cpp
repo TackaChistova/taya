@@ -77,18 +77,23 @@ else{
 
 //10
 int itc_mirror_count(long long number){
-long long a = 1;
+long long a = 0;
+long long n = 0;
 if(number > 0){
-    if(itc_mirror_num(a) == 1){
-    cout << a << " ";
-    a++;
+    while(a != number){
+        if(itc_mirror_num(a) == 1){
+            n++;
+        }
+        a++;
+    }
 }
+if(number < 0){
+    while(a != number){
+        if(itc_mirror_num(a) == 1){
+            n++;
+        }
+        a--;
+    }
 }
-if(number <= 0){
-    if(itc_mirror_num(a) == 1){
-    cout << a << " ";
-    a++;
-}
-
-}
+return n;
 }
