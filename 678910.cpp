@@ -85,6 +85,9 @@ else{
 int itc_mirror_count(long long number){
 long long a = 0;
 long long n = 0;
+if(number == 0){
+    return 2;
+}
 if(number > 0){
     while(a != number){
         if(itc_mirror_num(a) == 1){
