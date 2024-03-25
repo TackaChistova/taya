@@ -6,6 +6,9 @@ using namespace std;
 int itc_min_num(long long number){
 int mini = 10;
 int a;
+if(number == 0){
+    return 0;
+}
 if(number < 0){
     number = number * -1;
 }
